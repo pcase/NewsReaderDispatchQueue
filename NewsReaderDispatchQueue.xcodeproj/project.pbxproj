@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		DB62DE0D2447B421000AE993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE0C2447B421000AE993 /* AppDelegate.swift */; };
 		DB62DE0F2447B421000AE993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE0E2447B421000AE993 /* SceneDelegate.swift */; };
-		DB62DE112447B421000AE993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE102447B421000AE993 /* ViewController.swift */; };
 		DB62DE142447B421000AE993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB62DE122447B421000AE993 /* Main.storyboard */; };
 		DB62DE162447B423000AE993 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB62DE152447B423000AE993 /* Assets.xcassets */; };
 		DB62DE192447B423000AE993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB62DE172447B423000AE993 /* LaunchScreen.storyboard */; };
 		DB62DE242447B423000AE993 /* NewsReaderDispatchQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE232447B423000AE993 /* NewsReaderDispatchQueueTests.swift */; };
 		DB62DE2F2447B423000AE993 /* NewsReaderDispatchQueueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE2E2447B423000AE993 /* NewsReaderDispatchQueueUITests.swift */; };
+		DB62DE3D2447B48D000AE993 /* NewsReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE3C2447B48D000AE993 /* NewsReaderViewController.swift */; };
+		DB62DE442447B6AF000AE993 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE432447B6AF000AE993 /* UIColor.swift */; };
+		DB62DE462447B6E5000AE993 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE452447B6E5000AE993 /* News.swift */; };
+		DB62DE4C2447B7B6000AE993 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE4B2447B7B6000AE993 /* NewsCell.swift */; };
+		DB62DE4E2447B7E2000AE993 /* NewsReaderModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE4D2447B7E2000AE993 /* NewsReaderModelController.swift */; };
+		DB62DE502447C852000AE993 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE4F2447C852000AE993 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,6 @@
 		DB62DE092447B421000AE993 /* NewsReaderDispatchQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReaderDispatchQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB62DE0C2447B421000AE993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB62DE0E2447B421000AE993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB62DE102447B421000AE993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB62DE132447B421000AE993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB62DE152447B423000AE993 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB62DE182447B423000AE993 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		DB62DE2A2447B423000AE993 /* NewsReaderDispatchQueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsReaderDispatchQueueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB62DE2E2447B423000AE993 /* NewsReaderDispatchQueueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderDispatchQueueUITests.swift; sourceTree = "<group>"; };
 		DB62DE302447B423000AE993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB62DE3C2447B48D000AE993 /* NewsReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderViewController.swift; sourceTree = "<group>"; };
+		DB62DE432447B6AF000AE993 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		DB62DE452447B6E5000AE993 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = News.swift; path = ../Extensions/News.swift; sourceTree = "<group>"; };
+		DB62DE4B2447B7B6000AE993 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		DB62DE4D2447B7E2000AE993 /* NewsReaderModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsReaderModelController.swift; sourceTree = "<group>"; };
+		DB62DE4F2447C852000AE993 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B263A3CD7A0E14B3FF20ECB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB62DE002447B421000AE993 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +100,7 @@
 				DB62DE222447B423000AE993 /* NewsReaderDispatchQueueTests */,
 				DB62DE2D2447B423000AE993 /* NewsReaderDispatchQueueUITests */,
 				DB62DE0A2447B421000AE993 /* Products */,
+				4B263A3CD7A0E14B3FF20ECB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +117,14 @@
 		DB62DE0B2447B421000AE993 /* NewsReaderDispatchQueue */ = {
 			isa = PBXGroup;
 			children = (
+				DB62DE4F2447C852000AE993 /* Constants.swift */,
+				DB62DE422447B66A000AE993 /* Extensions */,
+				DB62DE412447B661000AE993 /* Model */,
+				DB62DE402447B657000AE993 /* View */,
+				DB62DE3F2447B64E000AE993 /* ModelController */,
+				DB62DE3E2447B63E000AE993 /* ViewController */,
 				DB62DE0C2447B421000AE993 /* AppDelegate.swift */,
 				DB62DE0E2447B421000AE993 /* SceneDelegate.swift */,
-				DB62DE102447B421000AE993 /* ViewController.swift */,
 				DB62DE122447B421000AE993 /* Main.storyboard */,
 				DB62DE152447B423000AE993 /* Assets.xcassets */,
 				DB62DE172447B423000AE993 /* LaunchScreen.storyboard */,
@@ -128,6 +151,46 @@
 			path = NewsReaderDispatchQueueUITests;
 			sourceTree = "<group>";
 		};
+		DB62DE3E2447B63E000AE993 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DB62DE3C2447B48D000AE993 /* NewsReaderViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DB62DE3F2447B64E000AE993 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				DB62DE4D2447B7E2000AE993 /* NewsReaderModelController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		DB62DE402447B657000AE993 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB62DE4B2447B7B6000AE993 /* NewsCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB62DE412447B661000AE993 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB62DE452447B6E5000AE993 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB62DE422447B66A000AE993 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DB62DE432447B6AF000AE993 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB62DE362447B423000AE993 /* Build configuration list for PBXNativeTarget "NewsReaderDispatchQueueTests" */;
 			buildPhases = (
+				6CCB340C949DBE9DA2012136 /* [CP] Check Pods Manifest.lock */,
 				DB62DE1B2447B423000AE993 /* Sources */,
 				DB62DE1C2447B423000AE993 /* Frameworks */,
 				DB62DE1D2447B423000AE993 /* Resources */,
@@ -170,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB62DE392447B423000AE993 /* Build configuration list for PBXNativeTarget "NewsReaderDispatchQueueUITests" */;
 			buildPhases = (
+				D4AD637EB2222631AD8056C6 /* [CP] Check Pods Manifest.lock */,
 				DB62DE262447B423000AE993 /* Sources */,
 				DB62DE272447B423000AE993 /* Frameworks */,
 				DB62DE282447B423000AE993 /* Resources */,
@@ -254,14 +319,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6CCB340C949DBE9DA2012136 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsReaderDispatchQueueTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4AD637EB2222631AD8056C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsReaderDispatchQueueUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB62DE052447B421000AE993 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB62DE112447B421000AE993 /* ViewController.swift in Sources */,
+				DB62DE3D2447B48D000AE993 /* NewsReaderViewController.swift in Sources */,
+				DB62DE4E2447B7E2000AE993 /* NewsReaderModelController.swift in Sources */,
+				DB62DE442447B6AF000AE993 /* UIColor.swift in Sources */,
 				DB62DE0D2447B421000AE993 /* AppDelegate.swift in Sources */,
+				DB62DE462447B6E5000AE993 /* News.swift in Sources */,
+				DB62DE4C2447B7B6000AE993 /* NewsCell.swift in Sources */,
 				DB62DE0F2447B421000AE993 /* SceneDelegate.swift in Sources */,
+				DB62DE502447C852000AE993 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
