@@ -13,6 +13,7 @@ class NewsReaderViewController: UIViewController {
     var newsList: [News] = []
     var newsImages: [UIImage] = []
     private let newsReaderModelController: NewsReaderModelController
+    private let spinnerViewController: SpinnerViewController
 
     private let collectionView: UICollectionView = {
         let viewLayout = UICollectionViewFlowLayout()
@@ -30,6 +31,7 @@ class NewsReaderViewController: UIViewController {
     
     required init(coder aDecoder: NSCoder) {
         self.newsReaderModelController = NewsReaderModelController()
+        self.spinnerViewController = SpinnerViewController()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -38,8 +40,13 @@ class NewsReaderViewController: UIViewController {
         setupViews()
         setupLayouts()
         
+        startSpinner(child: spinnerViewController)
+        
         // Call newsReaderModelController to get the news headlines
         newsReaderModelController.downloadNews(apiUrl: Constants.Urls.CNN_API_URL) { (response) in
+            
+            self.stopSpinner(child: self.spinnerViewController)
+            
             if let responseArray = response as? [News] {
                 for news in responseArray {
                     self.newsList.append(news)
@@ -72,10 +79,28 @@ class NewsReaderViewController: UIViewController {
             collectionView.rightAnchor.constraint(equalTo: view.rightAnchor)
         ])
     }
+    
+    // Start spinner view controller
+    func startSpinner(child: SpinnerViewController) {
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+    }
+    
+    // Stop spinner view controller
+    func stopSpinner(child: SpinnerViewController) {
+        DispatchQueue.main.async() {
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+    }
 }
 
 extension NewsReaderViewController: UICollectionViewDataSource {
     
+    // Go to url of selected item
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "NewsReaderDetailViewController") as! NewsReaderDetailViewController
         vc.url = newsList[indexPath.row].url
@@ -87,6 +112,7 @@ extension NewsReaderViewController: UICollectionViewDataSource {
         return newsList.count
     }
     
+    // Render cell with news information and image
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsCell.identifier, for: indexPath) as! NewsCell
 

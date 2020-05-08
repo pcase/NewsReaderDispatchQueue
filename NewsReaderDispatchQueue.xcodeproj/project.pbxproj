@@ -21,6 +21,7 @@
 		DB62DE4C2447B7B6000AE993 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE4B2447B7B6000AE993 /* NewsCell.swift */; };
 		DB62DE4E2447B7E2000AE993 /* NewsReaderModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE4D2447B7E2000AE993 /* NewsReaderModelController.swift */; };
 		DB62DE502447C852000AE993 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE4F2447C852000AE993 /* Constants.swift */; };
+		DBCE5F50246615B2006CFFE2 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCE5F4F246615B2006CFFE2 /* SpinnerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		DB62DE4B2447B7B6000AE993 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		DB62DE4D2447B7E2000AE993 /* NewsReaderModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsReaderModelController.swift; sourceTree = "<group>"; };
 		DB62DE4F2447C852000AE993 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DBCE5F4F246615B2006CFFE2 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			children = (
 				DB62DE3C2447B48D000AE993 /* NewsReaderViewController.swift */,
 				DB3BC30D2464D6A2005F5E9C /* NewsReaderDetailViewController.swift */,
+				DBCE5F4F246615B2006CFFE2 /* SpinnerViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				DB62DE4E2447B7E2000AE993 /* NewsReaderModelController.swift in Sources */,
 				DB62DE442447B6AF000AE993 /* UIColor.swift in Sources */,
 				DB62DE0D2447B421000AE993 /* AppDelegate.swift in Sources */,
+				DBCE5F50246615B2006CFFE2 /* SpinnerViewController.swift in Sources */,
 				DB62DE462447B6E5000AE993 /* News.swift in Sources */,
 				DB3BC30E2464D6A2005F5E9C /* NewsReaderDetailViewController.swift in Sources */,
 				DB62DE4C2447B7B6000AE993 /* NewsCell.swift in Sources */,

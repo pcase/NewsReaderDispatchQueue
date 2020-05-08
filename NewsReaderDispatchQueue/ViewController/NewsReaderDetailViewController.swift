@@ -11,7 +11,6 @@ import WebKit
 
 class NewsReaderDetailViewController: UIViewController, WKUIDelegate {
 
-    
     var webView: WKWebView!
     var url:String = ""
     
@@ -34,5 +33,34 @@ class NewsReaderDetailViewController: UIViewController, WKUIDelegate {
     
     @objc func close() {
         self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension NewsReaderDetailViewController: WKNavigationDelegate {
+    
+    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        var action: WKNavigationActionPolicy?
+
+        defer {
+            decisionHandler(action ?? .allow)
+        }
+
+        guard let url = navigationAction.request.url else { return }
+        print("decidePolicyFor - url: \(url)")
+    }
+
+    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+        print("didStartProvisionalNavigation - webView.url: \(String(describing: webView.url?.description))")
+    }
+
+    func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        let nserror = error as NSError
+        if nserror.code != NSURLErrorCancelled {
+            webView.loadHTMLString("Page Not Found", baseURL: URL(string: "https://developer.apple.com/"))
+        }
+    }
+
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        print("didFinish - webView.url: \(String(describing: webView.url?.description))")
     }
 }
