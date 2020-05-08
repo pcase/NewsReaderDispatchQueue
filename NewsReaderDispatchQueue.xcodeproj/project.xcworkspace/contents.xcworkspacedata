@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../NewsReaderDispatchQueue/View/NewsCell.swift">
-   </FileRef>
-   <FileRef
       location = "self:NewsReaderDispatchQueue.xcodeproj">
    </FileRef>
 </Workspace>

@@ -13,9 +13,11 @@ import UIKit
 class News: NSObject {
     
     var title: String = ""
-    var publish_date: String = ""
-    var summary: String = ""
+    var desc: String = ""
+    var url: String = ""
     var image_url: String = ""
     var image: UIImage?
     var imageName: String = ""
+    var publish_date: String = ""
+    var content: String = ""
 }

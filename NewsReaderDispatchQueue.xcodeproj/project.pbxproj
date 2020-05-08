@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB3BC30E2464D6A2005F5E9C /* NewsReaderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3BC30D2464D6A2005F5E9C /* NewsReaderDetailViewController.swift */; };
 		DB62DE0D2447B421000AE993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE0C2447B421000AE993 /* AppDelegate.swift */; };
 		DB62DE0F2447B421000AE993 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB62DE0E2447B421000AE993 /* SceneDelegate.swift */; };
 		DB62DE142447B421000AE993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB62DE122447B421000AE993 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB3BC30D2464D6A2005F5E9C /* NewsReaderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsReaderDetailViewController.swift; sourceTree = "<group>"; };
 		DB62DE092447B421000AE993 /* NewsReaderDispatchQueue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsReaderDispatchQueue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB62DE0C2447B421000AE993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB62DE0E2447B421000AE993 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				DB62DE3C2447B48D000AE993 /* NewsReaderViewController.swift */,
+				DB3BC30D2464D6A2005F5E9C /* NewsReaderDetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				DB62DE442447B6AF000AE993 /* UIColor.swift in Sources */,
 				DB62DE0D2447B421000AE993 /* AppDelegate.swift in Sources */,
 				DB62DE462447B6E5000AE993 /* News.swift in Sources */,
+				DB3BC30E2464D6A2005F5E9C /* NewsReaderDetailViewController.swift in Sources */,
 				DB62DE4C2447B7B6000AE993 /* NewsCell.swift in Sources */,
 				DB62DE0F2447B421000AE993 /* SceneDelegate.swift in Sources */,
 				DB62DE502447C852000AE993 /* Constants.swift in Sources */,

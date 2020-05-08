@@ -38,9 +38,24 @@ class NewsReaderModelController {
                         if let articles = jsonArray["articles"] as? [[String : AnyObject]] {
                             for article in articles {
                                 let news = News()
-                                news.title = article["title"] as! String
-                                news.publish_date = article["publishedAt"] as! String 
-                                news.image_url = article["urlToImage"] as! String
+                                if let newsTitle = article["title"] as? String {
+                                    news.title = newsTitle
+                                }
+                                if let desc = article["description"] as? String {
+                                       news.desc = desc
+                                }
+                                if let url = article["url"] as? String {
+                                    news.url = url
+                                }
+                                if let imageUrl = article["urlToImage"] as? String {
+                                    news.image_url = imageUrl
+                                }
+                                if let publishDate = article["publishedAt"] as? String {
+                                    news.publish_date = publishDate
+                                }
+                                if let content = article["content"] as? String {
+                                       news.content = content
+                                }
                                 self.newsDataList.append(news)
                             }
                         }
