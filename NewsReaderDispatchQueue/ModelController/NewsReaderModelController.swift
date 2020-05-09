@@ -79,10 +79,12 @@ class NewsReaderModelController {
      */
     func downloadImage(imageUrl: String, completed: @escaping ImageDownloadComplete) {
         DispatchQueue.global().async {
-            if let data = try? Data(contentsOf: URL(string: imageUrl)!) {
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        completed(image)
+            if let tempImageUrl = URL(string: imageUrl) {
+                if let data = try? Data(contentsOf: tempImageUrl) {
+                    if let image = UIImage(data: data) {
+                        DispatchQueue.main.async {
+                            completed(image)
+                        }
                     }
                 }
             }

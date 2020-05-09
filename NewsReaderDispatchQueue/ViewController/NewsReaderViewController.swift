@@ -130,11 +130,11 @@ extension NewsReaderViewController: UICollectionViewDataSource {
             if let image = response as? UIImage {
                 currentNews.image = image
             } else {
-                currentNews.image = UIImage(named: "placeholder.png")
+                currentNews.image = UIImage(named: "placeholder.png") 
             }
             cell.setup(with: currentNews)
         }
-        cell.contentView.backgroundColor = UIColor(name: "lightblue")
+        cell.contentView.backgroundColor = UIColor(name: "lightsteelblue")
         return cell
     }
 }
